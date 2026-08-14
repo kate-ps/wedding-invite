@@ -2,418 +2,333 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Kedar & Saniya's Wedding Invitation"
-  >
+  <title>Kedar & Saniya | Wedding Invitation</title>
 
-  <title>Kedar & Saniya | Wedding</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Our CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- =========================
-       HERO / INVITATION
+       HERO / MAIN INVITATION
   ========================== -->
 
   <header class="hero">
 
-    <div class="ornament">
-      ✦ ❦ ✦
+    <div class="fairy-lights"></div>
+
+    <div class="floral floral-top-left"></div>
+    <div class="floral floral-top-right"></div>
+
+    <div class="hero-content">
+
+      <!-- Add your couple cartoon later -->
+      <div class="couple-placeholder">
+        <span>Your couple illustration goes here</span>
+      </div>
+
+      <div class="invitation-copy">
+
+        <div class="monogram">
+          K <span>♡</span> S
+        </div>
+
+        <p class="eyebrow">
+          Together with our families
+        </p>
+
+        <h1>
+          Kedar
+          <span>&</span>
+          Saniya
+        </h1>
+
+        <p class="married-text">
+          are getting married
+        </p>
+
+        <div class="divider">
+          <span></span>
+          ♥
+          <span></span>
+        </div>
+
+        <p class="bio-line">
+          Two sequences. One beautiful alignment.
+        </p>
+
+        <div class="wedding-meta">
+          <span>18–19 December 2026</span>
+          <span class="dot">•</span>
+          <span>Pune, India</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#celebrations" class="btn btn-primary">
+            View Celebrations
+          </a>
+
+          <a href="#rsvp" class="btn btn-secondary">
+            RSVP Now
+          </a>
+        </div>
+
+      </div>
+
     </div>
-
-    <p class="eyebrow">
-      Together with our families
-    </p>
-
-    <h1>
-      Kedar
-      <span>&</span>
-      Saniya
-    </h1>
-
-    <p class="hero-subtitle">
-      are getting married
-    </p>
-
-    <div class="bio-tag">
-      Two sequences. One alignment.
-    </div>
-
-    <!-- Filled automatically for personalized links -->
-    <div
-      id="guestGreeting"
-      class="guest-greeting hidden"
-    ></div>
-
-    <a href="#match" class="scroll-link">
-      Discover our story ↓
-    </a>
 
   </header>
 
 
-  <main>
+  <!-- =========================
+       CELEBRATIONS
+  ========================== -->
 
-    <!-- =========================
-         MATCH ANALYSIS
-    ========================== -->
+  <section id="celebrations" class="section celebrations">
 
-    <section id="match" class="section match-section">
+    <p class="section-kicker">
+      Our Celebrations
+    </p>
 
-      <p class="section-label">
-        MATCH DETECTED
-      </p>
+    <h2>
+      Come celebrate with us
+    </h2>
 
-      <h2>
-        A statistically significant love story.
-      </h2>
+    <p class="section-intro">
+      Click on any celebration to see the details.
+    </p>
 
-      <div class="stats-grid">
 
-        <div class="stat-card">
-          <span class="stat-value">
-            100%
-          </span>
+    <div class="event-grid">
 
-          <span class="stat-label">
-            Compatibility
-          </span>
+      <button
+        class="event-card"
+        data-event="haldi"
+      >
+        <div class="event-art">🌼</div>
+
+        <h3>Haldi</h3>
+
+        <p>18 Dec 2026</p>
+        <span>10:30 AM</span>
+
+        <strong>View Details →</strong>
+      </button>
+
+
+      <button
+        class="event-card"
+        data-event="mehendi"
+      >
+        <div class="event-art">🌿</div>
+
+        <h3>Mehendi</h3>
+
+        <p>18 Dec 2026</p>
+        <span>4:00 PM</span>
+
+        <strong>View Details →</strong>
+      </button>
+
+
+      <button
+        class="event-card"
+        data-event="sangeet"
+      >
+        <div class="event-art">🥁</div>
+
+        <h3>Sangeet</h3>
+
+        <p>18 Dec 2026</p>
+        <span>7:30 PM</span>
+
+        <strong>View Details →</strong>
+      </button>
+
+
+      <button
+        class="event-card featured"
+        data-event="wedding"
+      >
+
+        <div class="main-event-badge">
+          Main Event
         </div>
 
+        <div class="event-art">🪷</div>
 
-        <div class="stat-card">
-          <span class="stat-value">
-            0.00
-          </span>
+        <h3>Wedding</h3>
 
-          <span class="stat-label">
-            False Discovery Rate
-          </span>
-        </div>
+        <p>19 Dec 2026</p>
+        <span>11:00 AM</span>
 
-
-        <div class="stat-card">
-          <span class="stat-value">
-            ∞
-          </span>
-
-          <span class="stat-label">
-            Follow-up Period
-          </span>
-        </div>
-
-      </div>
-
-      <p class="small-note">
-        Replication status: lifetime.
-      </p>
-
-    </section>
+        <strong>View Details →</strong>
+      </button>
 
 
-    <!-- =========================
-         SEQUENCE ALIGNMENT
-    ========================== -->
+      <button
+        class="event-card"
+        data-event="reception"
+      >
+        <div class="event-art">✨</div>
 
-    <section
-      id="story"
-      class="section story-section"
-    >
+        <h3>Reception</h3>
 
-      <p class="section-label">
-        THE DISCOVERY
-      </p>
+        <p>19 Dec 2026</p>
+        <span>7:30 PM</span>
 
-      <h2>
-        Somehow, the sequences aligned.
-      </h2>
+        <strong>View Details →</strong>
+      </button>
 
-
-      <div class="alignment-card">
-
-        <div class="sequence-row">
-          <span class="sequence-name">
-            SANIYA
-          </span>
-
-          <code>──── A ─── T ─── G ─── C ─────</code>
-        </div>
-
-
-        <div class="alignment-match">
-          <code>          │     │     │     │</code>
-        </div>
-
-
-        <div class="sequence-row">
-          <span class="sequence-name">
-            KEDAR
-          </span>
-
-          <code>──── A ─── T ─── G ─── C ─────</code>
-        </div>
-
-
-        <div class="perfect-match">
-          PERFECT ALIGNMENT ♥
-        </div>
-
-      </div>
-
-
-      <!-- =========================
-           LOVE STORY TIMELINE
-      ========================== -->
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-
-          <span class="timeline-dot"></span>
-
-          <div>
-
-            <p class="timeline-year">
-              CHAPTER 01
-            </p>
-
-            <h3>
-              First Contact
-            </h3>
-
-            <p>
-              This is where we'll add how Kedar
-              and Saniya first met.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-          <span class="timeline-dot"></span>
-
-          <div>
-
-            <p class="timeline-year">
-              CHAPTER 02
-            </p>
-
-            <h3>
-              Sequence Alignment
-            </h3>
-
-            <p>
-              Somewhere along the way, two
-              independent datasets started
-              looking suspiciously correlated.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-          <span class="timeline-dot"></span>
-
-          <div>
-
-            <p class="timeline-year">
-              CHAPTER 03
-            </p>
-
-            <h3>
-              The Final Call
-            </h3>
-
-            <p>
-              After sufficient evidence,
-              the hypothesis was accepted.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
+    </div>
 
 
     <!-- =========================
-         WEDDING EVENTS
+         EVENT DETAIL PANEL
     ========================== -->
 
-    <section
-      id="events"
-      class="section events-section"
-    >
+    <div id="eventPanel" class="event-panel hidden">
 
-      <p class="section-label">
-        EXPERIMENTAL PROTOCOL
-      </p>
+      <button
+        id="closePanel"
+        class="close-panel"
+        aria-label="Close event details"
+      >
+        ×
+      </button>
 
-      <h2>
-        The festivities.
-      </h2>
+      <div class="event-panel-inner">
 
+        <div class="event-panel-image">
+          <div id="panelEmoji">🌼</div>
+        </div>
 
-      <div class="event-grid">
+        <div class="event-panel-content">
 
+          <p class="panel-label">
+            Celebration Details
+          </p>
 
-        <article class="event-card">
-
-          <div class="event-icon">
-            🌼
-          </div>
-
-          <h3>
+          <h3 id="panelTitle">
             Haldi
           </h3>
 
-          <p class="event-date">
-            Date & Time
-          </p>
-
-          <p>
-            Venue
-          </p>
-
-        </article>
+          <p
+            id="panelDate"
+            class="panel-date"
+          ></p>
 
 
-        <article class="event-card">
+          <div class="detail-grid">
 
-          <div class="event-icon">
-            🌿
+            <div class="detail-item">
+              <span>Venue</span>
+              <p id="panelVenue"></p>
+            </div>
+
+            <div class="detail-item">
+              <span>Dress Code</span>
+              <p id="panelDress"></p>
+            </div>
+
+            <div class="detail-item">
+              <span>What to Expect</span>
+              <p id="panelDescription"></p>
+            </div>
+
           </div>
 
-          <h3>
-            Mehendi
-          </h3>
+          <a
+            id="panelMap"
+            href="#"
+            class="btn btn-primary location-btn"
+            target="_blank"
+          >
+            View Location
+          </a>
 
-          <p class="event-date">
-            Date & Time
-          </p>
-
-          <p>
-            Venue
-          </p>
-
-        </article>
-
-
-        <article class="event-card">
-
-          <div class="event-icon">
-            ✨
-          </div>
-
-          <h3>
-            Sangeet
-          </h3>
-
-          <p class="event-date">
-            Date & Time
-          </p>
-
-          <p>
-            Venue
-          </p>
-
-        </article>
-
-
-        <article class="event-card featured">
-
-          <div class="event-icon">
-            🪷
-          </div>
-
-          <h3>
-            Wedding
-          </h3>
-
-          <p class="event-date">
-            Date & Time
-          </p>
-
-          <p>
-            Venue
-          </p>
-
-        </article>
+        </div>
 
       </div>
 
-    </section>
+    </div>
+
+  </section>
 
 
-    <!-- =========================
-         RSVP
-    ========================== -->
+  <!-- =========================
+       SMALL BIOINFO EASTER EGG
+  ========================== -->
 
-    <section
-      id="rsvp"
-      class="section rsvp-section"
-    >
+  <section class="bio-strip">
 
-      <p class="section-label">
-        LONGITUDINAL STUDY ENROLLMENT
+    <span>
+      Kedar × Saniya
+    </span>
+
+    <span>
+      Match confidence: 100%
+    </span>
+
+    <span>
+      FDR: 0.00
+    </span>
+
+    <span>
+      Replication status: lifetime
+    </span>
+
+  </section>
+
+
+  <!-- =========================
+       RSVP
+  ========================== -->
+
+  <section id="rsvp" class="section rsvp-section">
+
+    <div class="rsvp-card">
+
+      <p class="section-kicker">
+        Your presence makes our story complete
       </p>
 
       <h2>
-        Will you be joining us?
+        RSVP
       </h2>
 
-      <p class="rsvp-intro">
-        Hypothesis: our celebration will be
-        significantly better with you there.
+      <p>
+        Please confirm your presence and bless us with your love.
       </p>
 
 
       <form id="rsvpForm">
 
-
-        <div class="form-grid">
-
+        <div class="form-row">
 
           <label>
-
             Guest / Family Name
 
             <input
-              type="text"
               id="guestName"
               name="guestName"
+              type="text"
               required
             >
-
           </label>
 
 
           <label>
-
             Are you attending?
 
             <select
@@ -438,54 +353,32 @@
 
           </label>
 
+        </div>
+
+
+        <div class="form-row">
 
           <label>
-
-            Number of guests
+            Number of Guests
 
             <input
               type="number"
-              id="guestCount"
               name="guestCount"
               min="1"
-              max="20"
               value="1"
             >
-
           </label>
 
 
           <label>
+            Food Preference
 
-            Food preference
-
-            <select
-              id="food"
-              name="food"
-            >
-
-              <option value="">
-                Select
-              </option>
-
-              <option>
-                Vegetarian
-              </option>
-
-              <option>
-                Non-vegetarian
-              </option>
-
-              <option>
-                Vegan
-              </option>
-
-              <option>
-                Other / dietary restriction
-              </option>
-
+            <select name="food">
+              <option value="">Select</option>
+              <option>Vegetarian</option>
+              <option>Non-vegetarian</option>
+              <option>Vegan</option>
             </select>
-
           </label>
 
         </div>
@@ -494,49 +387,34 @@
         <fieldset>
 
           <legend>
-            Events you plan to attend
+            Which celebrations will you attend?
           </legend>
 
-
-          <div class="checkbox-row">
+          <div class="checkboxes">
 
             <label>
-              <input
-                type="checkbox"
-                name="events"
-                value="Haldi"
-              >
+              <input type="checkbox" value="Haldi">
               Haldi
             </label>
 
-
             <label>
-              <input
-                type="checkbox"
-                name="events"
-                value="Mehendi"
-              >
+              <input type="checkbox" value="Mehendi">
               Mehendi
             </label>
 
-
             <label>
-              <input
-                type="checkbox"
-                name="events"
-                value="Sangeet"
-              >
+              <input type="checkbox" value="Sangeet">
               Sangeet
             </label>
 
+            <label>
+              <input type="checkbox" value="Wedding">
+              Wedding
+            </label>
 
             <label>
-              <input
-                type="checkbox"
-                name="events"
-                value="Wedding"
-              >
-              Wedding
+              <input type="checkbox" value="Reception">
+              Reception
             </label>
 
           </div>
@@ -544,36 +422,53 @@
         </fieldset>
 
 
-        <label class="message-field">
-
+        <label>
           Leave us a message
 
           <textarea
-            id="message"
             name="message"
             rows="4"
-            placeholder="A blessing, a joke, or your favorite prediction for married life..."
           ></textarea>
-
         </label>
 
 
-        <button type="submit">
-          Submit Sample →
+        <button
+          class="btn btn-primary submit-btn"
+          type="submit"
+        >
+          Send RSVP ♥
         </button>
 
-
-        <p
-          id="formStatus"
-          class="form-status"
-        ></p>
-
+        <p id="formStatus"></p>
 
       </form>
 
-    </section>
+    </div>
 
-  </main>
+
+    <div class="note-card">
+
+      <p class="section-kicker">
+        A note from us
+      </p>
+
+      <h3>
+        To our favorite people,
+      </h3>
+
+      <p>
+        Your presence is the best gift we could ask for.
+        We cannot wait to celebrate, dance, laugh and
+        make memories together.
+      </p>
+
+      <p class="signature">
+        Kedar & Saniya
+      </p>
+
+    </div>
+
+  </section>
 
 
   <!-- =========================
@@ -583,17 +478,12 @@
   <footer>
 
     <p>
-      Kedar × Saniya
+      Thank you for being our favorite humans ♥
     </p>
-
-    <span>
-      p &lt; 0.0001 ♥
-    </span>
 
   </footer>
 
 
-  <!-- Our JavaScript -->
   <script src="script.js"></script>
 
 </body>
