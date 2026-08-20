@@ -1,488 +1,806 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
 
-  <title>Kedar & Saniya | Wedding Invitation</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
 
+  <title>Saniya & Kedar | Wedding Invitation</title>
+
+  <meta
+    name="description"
+    content="You are invited to celebrate the wedding of Saniya & Kedar."
+  />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
     rel="stylesheet"
-  >
+  />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- =========================
-       HERO / MAIN INVITATION
-  ========================== -->
+  <!-- =====================================================
+       LOADING SCREEN
+  ====================================================== -->
+  <div id="loader" class="loader">
+    <div class="loader-monogram">S<span>&</span>K</div>
+    <p>Preparing something beautiful...</p>
+  </div>
 
-  <header class="hero">
 
-    <div class="fairy-lights"></div>
+  <!-- =====================================================
+       MUSIC
+  ====================================================== -->
+  <audio id="weddingMusic" loop preload="auto">
+    <!-- Put your song in assets/music/wedding-song.mp3 -->
+    <source src="assets/music/wedding-song.mp3" type="audio/mpeg">
+  </audio>
 
-    <div class="floral floral-top-left"></div>
-    <div class="floral floral-top-right"></div>
+  <button
+    id="musicButton"
+    class="music-button"
+    aria-label="Toggle music"
+  >
+    <span class="music-icon">♫</span>
+    <span class="music-bars">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+  </button>
 
-    <div class="hero-content">
 
-      <!-- Add your couple cartoon later -->
-      <div class="couple-placeholder">
-        <span>Your couple illustration goes here</span>
-      </div>
+  <!-- =====================================================
+       ENVELOPE INTRO
+  ====================================================== -->
+  <section id="intro" class="intro">
 
-      <div class="invitation-copy">
+    <div class="intro-glow glow-one"></div>
+    <div class="intro-glow glow-two"></div>
 
-        <div class="monogram">
-          K <span>♡</span> S
-        </div>
+    <div class="floating-petal petal-1">✦</div>
+    <div class="floating-petal petal-2">✦</div>
+    <div class="floating-petal petal-3">✦</div>
+    <div class="floating-petal petal-4">✦</div>
 
-        <p class="eyebrow">
-          Together with our families
-        </p>
-
-        <h1>
-          Kedar
-          <span>&</span>
-          Saniya
-        </h1>
-
-        <p class="married-text">
-          are getting married
-        </p>
-
-        <div class="divider">
-          <span></span>
-          ♥
-          <span></span>
-        </div>
-
-        <p class="bio-line">
-          Two sequences. One beautiful alignment.
-        </p>
-
-        <div class="wedding-meta">
-          <span>18–19 December 2026</span>
-          <span class="dot">•</span>
-          <span>Pune, India</span>
-        </div>
-
-        <div class="hero-actions">
-          <a href="#celebrations" class="btn btn-primary">
-            View Celebrations
-          </a>
-
-          <a href="#rsvp" class="btn btn-secondary">
-            RSVP Now
-          </a>
-        </div>
-
-      </div>
-
+    <div class="intro-copy">
+      <p class="eyebrow">A celebration of love</p>
+      <h1>Saniya <span>&</span> Kedar</h1>
+      <p class="intro-subtitle">invite you to open something special</p>
     </div>
 
-  </header>
+    <div id="envelopeWrapper" class="envelope-wrapper">
 
+      <div class="envelope-shadow"></div>
 
-  <!-- =========================
-       CELEBRATIONS
-  ========================== -->
+      <div id="envelope" class="envelope">
 
-  <section id="celebrations" class="section celebrations">
+        <div class="envelope-back"></div>
 
-    <p class="section-kicker">
-      Our Celebrations
-    </p>
-
-    <h2>
-      Come celebrate with us
-    </h2>
-
-    <p class="section-intro">
-      Click on any celebration to see the details.
-    </p>
-
-
-    <div class="event-grid">
-
-      <button
-        class="event-card"
-        data-event="haldi"
-      >
-        <div class="event-art">🌼</div>
-
-        <h3>Haldi</h3>
-
-        <p>18 Dec 2026</p>
-        <span>10:30 AM</span>
-
-        <strong>View Details →</strong>
-      </button>
-
-
-      <button
-        class="event-card"
-        data-event="mehendi"
-      >
-        <div class="event-art">🌿</div>
-
-        <h3>Mehendi</h3>
-
-        <p>18 Dec 2026</p>
-        <span>4:00 PM</span>
-
-        <strong>View Details →</strong>
-      </button>
-
-
-      <button
-        class="event-card"
-        data-event="sangeet"
-      >
-        <div class="event-art">🥁</div>
-
-        <h3>Sangeet</h3>
-
-        <p>18 Dec 2026</p>
-        <span>7:30 PM</span>
-
-        <strong>View Details →</strong>
-      </button>
-
-
-      <button
-        class="event-card featured"
-        data-event="wedding"
-      >
-
-        <div class="main-event-badge">
-          Main Event
-        </div>
-
-        <div class="event-art">🪷</div>
-
-        <h3>Wedding</h3>
-
-        <p>19 Dec 2026</p>
-        <span>11:00 AM</span>
-
-        <strong>View Details →</strong>
-      </button>
-
-
-      <button
-        class="event-card"
-        data-event="reception"
-      >
-        <div class="event-art">✨</div>
-
-        <h3>Reception</h3>
-
-        <p>19 Dec 2026</p>
-        <span>7:30 PM</span>
-
-        <strong>View Details →</strong>
-      </button>
-
-    </div>
-
-
-    <!-- =========================
-         EVENT DETAIL PANEL
-    ========================== -->
-
-    <div id="eventPanel" class="event-panel hidden">
-
-      <button
-        id="closePanel"
-        class="close-panel"
-        aria-label="Close event details"
-      >
-        ×
-      </button>
-
-      <div class="event-panel-inner">
-
-        <div class="event-panel-image">
-          <div id="panelEmoji">🌼</div>
-        </div>
-
-        <div class="event-panel-content">
-
-          <p class="panel-label">
-            Celebration Details
-          </p>
-
-          <h3 id="panelTitle">
-            Haldi
-          </h3>
-
-          <p
-            id="panelDate"
-            class="panel-date"
-          ></p>
-
-
-          <div class="detail-grid">
-
-            <div class="detail-item">
-              <span>Venue</span>
-              <p id="panelVenue"></p>
-            </div>
-
-            <div class="detail-item">
-              <span>Dress Code</span>
-              <p id="panelDress"></p>
-            </div>
-
-            <div class="detail-item">
-              <span>What to Expect</span>
-              <p id="panelDescription"></p>
-            </div>
-
+        <div class="letter-preview">
+          <div class="letter-preview-inner">
+            <small>Together with our families</small>
+            <div class="preview-script">Saniya & Kedar</div>
+            <small>request the pleasure of your company</small>
           </div>
-
-          <a
-            id="panelMap"
-            href="#"
-            class="btn btn-primary location-btn"
-            target="_blank"
-          >
-            View Location
-          </a>
-
         </div>
 
-      </div>
+        <div class="envelope-left"></div>
+        <div class="envelope-right"></div>
+        <div class="envelope-bottom"></div>
 
-    </div>
+        <div class="envelope-flap"></div>
 
-  </section>
-
-
-  <!-- =========================
-       SMALL BIOINFO EASTER EGG
-  ========================== -->
-
-  <section class="bio-strip">
-
-    <span>
-      Kedar × Saniya
-    </span>
-
-    <span>
-      Match confidence: 100%
-    </span>
-
-    <span>
-      FDR: 0.00
-    </span>
-
-    <span>
-      Replication status: lifetime
-    </span>
-
-  </section>
-
-
-  <!-- =========================
-       RSVP
-  ========================== -->
-
-  <section id="rsvp" class="section rsvp-section">
-
-    <div class="rsvp-card">
-
-      <p class="section-kicker">
-        Your presence makes our story complete
-      </p>
-
-      <h2>
-        RSVP
-      </h2>
-
-      <p>
-        Please confirm your presence and bless us with your love.
-      </p>
-
-
-      <form id="rsvpForm">
-
-        <div class="form-row">
-
-          <label>
-            Guest / Family Name
-
-            <input
-              id="guestName"
-              name="guestName"
-              type="text"
-              required
-            >
-          </label>
-
-
-          <label>
-            Are you attending?
-
-            <select
-              id="attending"
-              name="attending"
-              required
-            >
-
-              <option value="">
-                Select
-              </option>
-
-              <option value="Yes">
-                Yes, absolutely!
-              </option>
-
-              <option value="No">
-                Sadly, no
-              </option>
-
-            </select>
-
-          </label>
-
-        </div>
-
-
-        <div class="form-row">
-
-          <label>
-            Number of Guests
-
-            <input
-              type="number"
-              name="guestCount"
-              min="1"
-              value="1"
-            >
-          </label>
-
-
-          <label>
-            Food Preference
-
-            <select name="food">
-              <option value="">Select</option>
-              <option>Vegetarian</option>
-              <option>Non-vegetarian</option>
-              <option>Vegan</option>
-            </select>
-          </label>
-
-        </div>
-
-
-        <fieldset>
-
-          <legend>
-            Which celebrations will you attend?
-          </legend>
-
-          <div class="checkboxes">
-
-            <label>
-              <input type="checkbox" value="Haldi">
-              Haldi
-            </label>
-
-            <label>
-              <input type="checkbox" value="Mehendi">
-              Mehendi
-            </label>
-
-            <label>
-              <input type="checkbox" value="Sangeet">
-              Sangeet
-            </label>
-
-            <label>
-              <input type="checkbox" value="Wedding">
-              Wedding
-            </label>
-
-            <label>
-              <input type="checkbox" value="Reception">
-              Reception
-            </label>
-
-          </div>
-
-        </fieldset>
-
-
-        <label>
-          Leave us a message
-
-          <textarea
-            name="message"
-            rows="4"
-          ></textarea>
-        </label>
-
-
-        <button
-          class="btn btn-primary submit-btn"
-          type="submit"
-        >
-          Send RSVP ♥
+        <button id="waxSeal" class="wax-seal">
+          <span class="wax-inner">
+            <strong>S</strong>
+            <i>&</i>
+            <strong>K</strong>
+          </span>
         </button>
 
-        <p id="formStatus"></p>
+      </div>
+    </div>
+
+    <p class="tap-text">
+      Tap the seal to open
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       MAIN INVITATION
+  ====================================================== -->
+  <main id="invitation" class="invitation hidden">
+
+    <!-- HERO -->
+    <section class="section hero-section">
+
+      <div class="ornament ornament-top">❧</div>
+
+      <div class="hero-content reveal">
+
+        <p class="section-kicker">
+          With the blessings of our families
+        </p>
+
+        <h2 class="hero-names">
+          Saniya
+          <span>&</span>
+          Kedar
+        </h2>
+
+        <div class="gold-line">
+          <span></span>
+          <i>✦</i>
+          <span></span>
+        </div>
+
+        <p class="hero-message">
+          Two hearts, two stories, one beautiful beginning.
+        </p>
+
+        <p class="hero-invite">
+          We would be delighted to celebrate our wedding with you.
+        </p>
+
+        <div class="scroll-hint">
+          <span>Scroll to begin</span>
+          <i></i>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         OUR STORY / COUPLE IMAGE
+    ====================================================== -->
+    <section class="section story-section">
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">A little story of</span>
+        <h3>Us</h3>
+      </div>
+
+      <div class="couple-frame reveal">
+
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <!--
+          Put your photo here:
+          assets/images/couple.jpg
+        -->
+        <div class="couple-photo-placeholder">
+          <span>S</span>
+          <i>♥</i>
+          <span>K</span>
+
+          <p>Add your couple illustration/photo here</p>
+        </div>
+
+      </div>
+
+      <div class="story-text reveal">
+        <p>
+          Somewhere between conversations, laughter, dreams and
+          countless little moments, we found home in each other.
+        </p>
+
+        <p class="script-line">
+          And now, forever begins.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SAVE THE DATE
+    ====================================================== -->
+    <section class="section save-date-section">
+
+      <div class="soft-floral floral-left"></div>
+      <div class="soft-floral floral-right"></div>
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">Mark your calendars</span>
+        <h3>Save the Date</h3>
+      </div>
+
+      <div class="date-card reveal">
+
+        <span class="date-month">DECEMBER</span>
+
+        <div class="date-layout">
+          <span class="date-side">SATURDAY</span>
+
+          <span class="date-number">
+            12
+          </span>
+
+          <span class="date-side">2026</span>
+        </div>
+
+        <p class="date-place">
+          City, State
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COUNTDOWN
+    ====================================================== -->
+    <section class="section countdown-section">
+
+      <p class="section-kicker reveal">
+        Counting every moment until
+      </p>
+
+      <h3 class="countdown-title reveal">
+        Forever
+      </h3>
+
+      <div class="countdown reveal">
+
+        <div class="count-box">
+          <strong id="days">00</strong>
+          <span>Days</span>
+        </div>
+
+        <div class="count-separator">:</div>
+
+        <div class="count-box">
+          <strong id="hours">00</strong>
+          <span>Hours</span>
+        </div>
+
+        <div class="count-separator">:</div>
+
+        <div class="count-box">
+          <strong id="minutes">00</strong>
+          <span>Minutes</span>
+        </div>
+
+        <div class="count-separator">:</div>
+
+        <div class="count-box">
+          <strong id="seconds">00</strong>
+          <span>Seconds</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCRATCH REVEAL
+    ====================================================== -->
+    <section class="section scratch-section">
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">Something awaits you</span>
+        <h3>Scratch to Reveal</h3>
+      </div>
+
+      <p class="scratch-description reveal">
+        Use your finger to uncover the surprise.
+      </p>
+
+      <div class="scratch-card reveal">
+
+        <div class="scratch-secret">
+          <span class="secret-small">
+            Save us a dance
+          </span>
+
+          <strong>
+            12 · 12 · 2026
+          </strong>
+
+          <span class="secret-script">
+            See you there!
+          </span>
+        </div>
+
+        <canvas id="scratchCanvas"></canvas>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CELEBRATIONS
+    ====================================================== -->
+    <section class="section events-section">
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">Join us for our</span>
+        <h3>Wedding Celebrations</h3>
+      </div>
+
+
+      <!-- MEHENDI -->
+      <article class="event-card reveal">
+
+        <div class="event-number">
+          01
+        </div>
+
+        <div class="event-icon">
+          ✦
+        </div>
+
+        <p class="event-day">
+          THURSDAY · DECEMBER 10
+        </p>
+
+        <h4>
+          Mehendi
+        </h4>
+
+        <p class="event-tagline">
+          Henna, happiness & a whole lot of color.
+        </p>
+
+        <div class="event-details">
+          <p>
+            <span>Time</span>
+            4:00 PM onwards
+          </p>
+
+          <p>
+            <span>Venue</span>
+            Venue Name
+          </p>
+        </div>
+
+        <div class="dress-code">
+          <span>Dress Code</span>
+          Festive & Colorful
+        </div>
+
+      </article>
+
+
+      <!-- HALDI -->
+      <article class="event-card reveal">
+
+        <div class="event-number">
+          02
+        </div>
+
+        <div class="event-icon">
+          ☀
+        </div>
+
+        <p class="event-day">
+          FRIDAY · DECEMBER 11
+        </p>
+
+        <h4>
+          Haldi
+        </h4>
+
+        <p class="event-tagline">
+          A morning painted in sunshine and love.
+        </p>
+
+        <div class="event-details">
+          <p>
+            <span>Time</span>
+            10:00 AM
+          </p>
+
+          <p>
+            <span>Venue</span>
+            Venue Name
+          </p>
+        </div>
+
+        <div class="dress-code">
+          <span>Dress Code</span>
+          Shades of Yellow
+        </div>
+
+      </article>
+
+
+      <!-- SANGEET -->
+      <article class="event-card dark-event reveal">
+
+        <div class="event-number">
+          03
+        </div>
+
+        <div class="event-icon">
+          ♫
+        </div>
+
+        <p class="event-day">
+          FRIDAY · DECEMBER 11
+        </p>
+
+        <h4>
+          Sangeet
+        </h4>
+
+        <p class="event-tagline">
+          An evening of music, memories and dancing.
+        </p>
+
+        <div class="event-details">
+          <p>
+            <span>Time</span>
+            7:00 PM onwards
+          </p>
+
+          <p>
+            <span>Venue</span>
+            Venue Name
+          </p>
+        </div>
+
+        <div class="dress-code">
+          <span>Dress Code</span>
+          Indian Glam
+        </div>
+
+      </article>
+
+
+      <!-- WEDDING -->
+      <article class="event-card wedding-event reveal">
+
+        <div class="event-number">
+          04
+        </div>
+
+        <div class="event-icon">
+          ❧
+        </div>
+
+        <p class="event-day">
+          SATURDAY · DECEMBER 12
+        </p>
+
+        <h4>
+          The Wedding
+        </h4>
+
+        <p class="event-tagline">
+          The moment we become forever.
+        </p>
+
+        <div class="event-details">
+          <p>
+            <span>Baraat</span>
+            4:30 PM
+          </p>
+
+          <p>
+            <span>Ceremony</span>
+            6:00 PM
+          </p>
+
+          <p>
+            <span>Reception</span>
+            8:00 PM onwards
+          </p>
+        </div>
+
+        <div class="dress-code">
+          <span>Dress Code</span>
+          Traditional Indian Formal
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         TIMELINE
+    ====================================================== -->
+    <section class="section timeline-section">
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">Your guide to</span>
+        <h3>The Big Day</h3>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <span class="timeline-time">4:30 PM</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h4>Baraat</h4>
+            <p>Let the celebration begin.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-time">5:30 PM</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h4>Milni</h4>
+            <p>Families come together.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-time">6:00 PM</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h4>Wedding Ceremony</h4>
+            <p>Seven steps toward forever.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-time">8:00 PM</span>
+          <div class="timeline-dot"></div>
+          <div>
+            <h4>Dinner & Reception</h4>
+            <p>Food, laughter and dancing.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         VENUE
+    ====================================================== -->
+    <section class="section venue-section">
+
+      <div class="venue-pattern"></div>
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">Where we'll celebrate</span>
+        <h3>The Venue</h3>
+      </div>
+
+      <div class="venue-card reveal">
+
+        <div class="venue-pin">
+          ✦
+        </div>
+
+        <h4>
+          Venue Name
+        </h4>
+
+        <p>
+          Street Address<br>
+          City, State ZIP
+        </p>
+
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+          rel="noopener"
+          class="luxury-button"
+        >
+          Get Directions
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRAVEL
+    ====================================================== -->
+    <section class="section travel-section">
+
+      <div class="section-heading reveal">
+        <span class="tiny-title">For our loved ones traveling</span>
+        <h3>Getting There</h3>
+      </div>
+
+      <div class="travel-grid">
+
+        <div class="travel-item reveal">
+          <div class="travel-icon">✈</div>
+          <h4>By Air</h4>
+          <p>
+            Nearest airport information can go here.
+          </p>
+        </div>
+
+        <div class="travel-item reveal">
+          <div class="travel-icon">⌂</div>
+          <h4>Stay</h4>
+          <p>
+            Hotel and accommodation details can go here.
+          </p>
+        </div>
+
+        <div class="travel-item reveal">
+          <div class="travel-icon">↟</div>
+          <h4>Transportation</h4>
+          <p>
+            Shuttle or local transportation information.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RSVP
+    ====================================================== -->
+    <section class="section rsvp-section">
+
+      <div class="section-heading light-heading reveal">
+        <span class="tiny-title">We hope you'll join us</span>
+        <h3>RSVP</h3>
+      </div>
+
+      <p class="rsvp-copy reveal">
+        Your presence will make our celebration even more special.
+      </p>
+
+      <form
+        id="rsvpForm"
+        class="rsvp-form reveal"
+      >
+
+        <div class="form-group">
+          <label for="guestName">Your Name</label>
+
+          <input
+            type="text"
+            id="guestName"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="attendance">Will you be joining us?</label>
+
+          <select
+            id="attendance"
+            name="attendance"
+            required
+          >
+            <option value="">
+              Choose an option
+            </option>
+
+            <option value="yes">
+              Joyfully Accept
+            </option>
+
+            <option value="no">
+              Regretfully Decline
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">
+            Number of Guests
+          </label>
+
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            value="1"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">
+            A message for us
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Leave us a note..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="luxury-button light-button"
+        >
+          Send RSVP
+        </button>
 
       </form>
 
-    </div>
+      <div
+        id="rsvpSuccess"
+        class="rsvp-success"
+      >
+        <span>♡</span>
+        <strong>Thank you!</strong>
+        <p>Your response has been received.</p>
+      </div>
+
+    </section>
 
 
-    <div class="note-card">
+    <!-- =====================================================
+         FINAL SCREEN
+    ====================================================== -->
+    <section class="section finale-section">
 
-      <p class="section-kicker">
-        A note from us
+      <div class="finale-stars">
+        ✦ ✦ ✦
+      </div>
+
+      <p class="section-kicker reveal">
+        Until we meet under the wedding lights
       </p>
 
-      <h3>
-        To our favorite people,
+      <h3 class="final-script reveal">
+        With love,
       </h3>
 
-      <p>
-        Your presence is the best gift we could ask for.
-        We cannot wait to celebrate, dance, laugh and
-        make memories together.
+      <h2 class="final-names reveal">
+        Saniya & Kedar
+      </h2>
+
+      <div class="heart-line reveal">
+        <span></span>
+        <i>♥</i>
+        <span></span>
+      </div>
+
+      <p class="final-date reveal">
+        DECEMBER · 2026
       </p>
 
-      <p class="signature">
-        Kedar & Saniya
+      <p class="final-note reveal">
+        We cannot wait to celebrate with you.
       </p>
 
-    </div>
+      <button
+        id="backToTop"
+        class="back-top"
+      >
+        ↑
+        <span>Back to top</span>
+      </button>
 
-  </section>
+    </section>
 
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer>
-
-    <p>
-      Thank you for being our favorite humans ♥
-    </p>
-
-  </footer>
-
+  </main>
 
   <script src="script.js"></script>
 
